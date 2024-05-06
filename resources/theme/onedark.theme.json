@@ -3,7 +3,7 @@
   "dark": true,
   "author": "Kostis",
   "colors": {
-    "bg": "#282c34",
+    "bg": "#24273a",
     "fg": "#abb2bf",
     "fg2": "#cccccc",
     "blue": "#61afef",
@@ -22,7 +22,7 @@
     "cursor": "#2c323c",
     "gutter": "#4b5263",
     "special": "#3b4048",
-    "visual": "#3e4452",
+    "visual": "#24273a",
     "accentColor": "#568AF2"
   },
   "ui": {
@@ -366,7 +366,7 @@
       "Objects.RedStatus": "#e06c74",
       "Objects.Yellow": "#e5c07b",
       "Objects.YellowDark": "#d19a66",
-      "Objects.BlackText": "#282c34",
+      "Objects.BlackText": "#24273a",
       "Tree.iconColor": "#61afef",
       "Checkbox.Background.Default": "#3d424b",
       "Checkbox.Background.Selected": "#3d424b",
