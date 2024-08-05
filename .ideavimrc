@@ -14,7 +14,7 @@ set showcmd
 set smartcase
 set visualbell
 
-let g:highlightedyank_highlight_color = "rgba(50, 56, 68, 255)"
+let g:highlightedyank_highlight_color = "rgba(73, 77, 100, 240)"
 let g:highlightedyank_highlight_duration = "150"
 
 nnoremap <unique> <silent> [b :bp<CR>
@@ -67,6 +67,7 @@ nmap <M-h> <Action>(MoveStatementUp)
 nmap <M-l> <Action>(MoveStatementDown)
 
 " map <unique> <silent> <leader>f <Action>(ActivateProjectToolWindow)
+map <unique> <silent> <leader>+ :set nu! rnu!<cr>
 map <unique> <silent> <leader>; <Action>(HideAllWindows)
 map <unique> <silent> <leader><Tab> <Action>(GotoTest)
 map <unique> <silent> <leader><leader> :b#<CR>
@@ -74,7 +75,6 @@ map <unique> <silent> <leader>D <Action>(ToggleLineBreakpoint)
 map <unique> <silent> <leader>G <Action>(Annotate)
 map <unique> <silent> <leader>M <Action>(MainMenu)
 map <unique> <silent> <leader>O <Action>(ViewToolButtons)
-map <unique> <silent> <leader>U :set nu! rnu!<cr>
 map <unique> <silent> <leader>a <Action>(FindInPath)
 map <unique> <silent> <leader>b <Action>(ViewStatusBar)
 map <unique> <silent> <leader>d <Action>(RecentFiles)
