@@ -88,6 +88,7 @@ map <unique> <silent> <leader>s <Action>(SearchEverywhere)
 map <unique> <silent> <leader>t <Action>(ActivateTerminalToolWindow)
 map <unique> <silent> <leader>u <Action>(ToggleDistractionFreeMode)
 map <unique> <silent> <leader>w <Action>(SaveAll)
+map <unique> <silent> <leader>x <Action>(CloseAllEditorsButActive)
 map <unique> <silent> <leader>y <Action>(ActivateProblemsViewToolWindow)
 map <unique> <silent> <leader>z <Action>(ExpandRegionRecursively)
 
