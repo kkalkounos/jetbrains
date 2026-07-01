@@ -1,11 +1,13 @@
 let mapleader = " "
 
 set NERDTree
+set clipboard+=ideaput
 set commentary
 set highlightedyank
 set hlsearch
 set ideajoin
 set ignorecase
+set inccommand=split
 set incsearch
 set noshowmode
 set notimeout
@@ -55,15 +57,20 @@ nnoremap <unique> <silent> <leader>j <C-w>j
 nnoremap <unique> <silent> <leader>k <C-w>k
 nnoremap <unique> <silent> <leader>l <C-w>l
 
-nnoremap <unique> <silent> <leader>n gt<cr>
-nnoremap <unique> <silent> <leader>p gT<cr>
+nnoremap <unique> <silent> <leader>n gt
+nnoremap <unique> <silent> <leader>p gT
 nnoremap <unique> <silent> <leader>z za
 vnoremap <unique> <silent> <leader>p p
 
-nmap <M-k> <Action>(MoveLineUp)
-nmap <M-j> <Action>(MoveLineDown)
-nmap <M-h> <Action>(MoveStatementUp)
-nmap <M-l> <Action>(MoveStatementDown)
+vmap <M-k> <Action>(MoveLineUp)
+vmap <M-j> <Action>(MoveLineDown)
+vmap <M-h> <Action>(MoveStatementUp)
+vmap <M-l> <Action>(MoveStatementDown)
+
+nnoremap <unique> <silent> <M-h> <C-w><
+nnoremap <unique> <silent> <M-j> <C-w>-
+nnoremap <unique> <silent> <M-k> <C-w>+
+nnoremap <unique> <silent> <M-l> <C-w>>
 
 " map <unique> <silent> <leader>f <Action>(ActivateProjectToolWindow)
 map <unique> <silent> <leader>; <Action>(HideAllWindows)
@@ -90,7 +97,7 @@ map <unique> <silent> <leader>u <Action>(ToggleDistractionFreeMode)
 map <unique> <silent> <leader>w <Action>(SaveAll)
 map <unique> <silent> <leader>x <Action>(CloseAllEditorsButActive)
 map <unique> <silent> <leader>y <Action>(ActivateProblemsViewToolWindow)
-map <unique> <silent> <leader>z <Action>(ExpandRegionRecursively)
+vmap <unique> <silent> <leader>z <Action>(ExpandRegionRecursively)
 
 map <unique> <silent> g, <Action>(JumpToNextChange)
 map <unique> <silent> g; <Action>(JumpToLastChange)
@@ -120,11 +127,9 @@ nnoremap <unique> <silent> <leader>v "+p
 vnoremap <unique> <silent> <leader>c "+y
 vnoremap <unique> <silent> <leader>v "+p
 
-inoremap <unique> <silent> <space> <space><c-g>u
-
 " :actionlist -- list all commands
 " -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 " Find more examples here: https://jb.gg/share-ideavimrc
-"
+
 " defaults delete -g ApplePressAndHoldEnabled
 " defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false
